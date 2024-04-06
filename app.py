@@ -2,8 +2,10 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-st.set_page_config(page_title='Histograma e grafico referente a anúncios de vendas de carros')
-     
+st.set_page_config(page_title='Meu app com Streamlit')
+st.title('Histograma e Grafico de anúncios de vendas de carros')
+st.write('Escolha qual deseja executar:') 
+
 car_data = pd.read_csv('vehicles.csv') # lendo os dados
 hist_button = st.button('Criar histograma') # criar um botão
 plot_express_button = st.button('Criar gráfico de dispersão') # criar um botão    
